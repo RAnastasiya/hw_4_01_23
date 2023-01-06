@@ -5,8 +5,8 @@
 якщо обидва нулі - то покласти в результат NaN і вивести результат.
 */
 
-const value1 = 4;
-const value2 = 0;
+const value1 = 0;
+const value2 = 2;
 let res;
 
 if( value1 > 0 && value2 > 0 || value1 < 0 && value2 < 0 ) {
@@ -16,8 +16,7 @@ if( value1 > 0 && value2 > 0 || value1 < 0 && value2 < 0 ) {
 }
 if (value1 === 0 && value2 === 0){
     res = NaN;
-} 
-if (value1 === 0 || value2 === 0){
+} else if (value1 === 0 || value2 === 0){
     res = value1 + value2;
 }
 console.log(res);
